@@ -67,6 +67,7 @@ body {
 
 .main-left {
     padding: 12px;
+    padding-left: 40px;
 }
 
 .main-left > div {
@@ -74,13 +75,14 @@ body {
 }
 
 .logo > p {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    font-weight: 700;
 }
 
 .nav-top > ul > li , .nav-bottom > ul > li {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    padding-bottom: 12px;
+    padding-bottom: 16px;
 }
 
 .main-right {
@@ -90,23 +92,26 @@ body {
 
 .main-right > div {
     padding: 12px;
+    padding-right: 40px;
 }
 
 .right-bottom {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 5fr 2fr;
+    background-color: rgb(243 244 246);
 }
 
 .title {
-    font-size: 1.1rem;
+    padding-top: 20px;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
 .your-projects {
     grid-row-start: 1;
     grid-row-end: 3;
-    margin-right: 8px;
+    margin-right: 12px;
 }
 
 .announcements {
@@ -117,11 +122,25 @@ body {
     overflow: auto;
     display: grid;
     padding-top: 8px;
-    gap: 12px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    gap: 20px;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .card {
     height: 180px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.side-card {
+    min-height: 85%;
+    padding-top: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 8px;
 }
